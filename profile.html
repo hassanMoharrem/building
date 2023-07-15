@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="theme-color" content="#000000"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--load all styles for font aswesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- My own style -->
+    <link href="assets/css/style.css" rel="stylesheet"/>
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<div class="wrapper position-relative container-fluid py-0 ">
+    <div class="d-flex">
+        <div class="w-200 pt-2 px-2 d-lg-block d-none sidebar">
+            <div class="text-end my-3">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" width="160px" alt="">
+                </a>
+            </div>
+            <ul class="py-3 list-unstyled when-hover-side ps-4">
+                <li class="  bg-white mb-3 px-3 py-2">
+                    <a href="" class=" d-block mb-0 h6 text-decoration-none text-muted"><i class="fas fa-home h6 ms-2"></i>
+                        الرئيسية</a>
+                </li>
+                <li class="  bg-white mb-3 p-3 py-2">
+                    <a href="" class="d-block mb-0 h6 text-decoration-none sub-color"><i class="fas fa-user h6 ms-2"></i>
+                        الملف الشخصي</a>
+                </li>
+                <li class="  bg-white mb-3 px-3 py-2">
+                    <a href="" class=" d-block mb-0 h6 text-decoration-none text-muted"><i class="fas fa-home h6 ms-2"></i>
+                        الباقات</a>
+                </li>
+                <li class=" bg-white  mb-3 px-3 py-2">
+                    <a href="" class=" d-block mb-0 h6 text-decoration-none text-muted"><i class="fas fa-shopping-cart h6 ms-2"></i>
+                        السلة</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="position-absolute active-sidebar d-lg-none d-lg-block">
+            <i class="btn fas fa-bars border p-2 rounded-2 bg-light"></i>
+        </div>
+
+        <div class="main min-vh-100 container-edit shadow-sm border-end px-4 pt-2 mx-auto bg-light">
+            <div class="position-relative text-center d-lg-none d-lg-block">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" width="160px" alt="">
+                </a>
+            </div>
+            <section class="my-3 position-relative px-0">
+                <section class="position-absolute top-0 start-0 m-4">
+                    <div class="dropdown dropdown-menu-32 d-inline-block ms-3">
+                        <img src="assets/images/logo.png" height="40" width="40"
+                             class="d-inline-block border rounded-circle cover bg-light" alt="">
+                        <button class="btn h6 text-dark p-0 m-0 align-middle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            <span class="d-none d-lg-inline-block text-dark fst-normal">حسن أبو محرم</span><small
+                                class="fas fa-chevron-down text-muted me-2"></small>
+                        </button>
+                        <ul class="dropdown-menu border-0 shadow text-end" aria-labelledby="dropdownMenuButton1">
+                            <li class="px-2 pt-2 pb-2 border-bottom"><a class="dropdown-item" href="#"><h6
+                                    class="p-2 bg-main rounded-circle ms-2 d-inline-block"><i
+                                    class="fas fa-user p-1 text-white"></i></h6>الملف الشخصي</a></li>
+                            <li class="p-2">
+                                <a class="dropdown-item py-2" href="#"><h6 class="mb-0"><i
+                                        class="fas fa-list h6 ms-2 sub-color"></i>الأسئلة الشائعة</h6></a>
+                                <a class="dropdown-item py-2" href="#"><h6 class="mb-0"><i
+                                        class="fas fa-info h6 ms-3 sub-color"></i>سياسة الخصوصية</h6></a>
+                                <a class="dropdown-item py-2" href="logout"><h6 class="mb-0">
+                                    <i class="fas fa-sign-out-alt h6 ms-2 sub-color"></i>تسجيل خروج</h6></a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </section>
+                <div class="bg-ofwhite rounded-30  p-4 mb-3">
+                    <h3 class="color-navy">الملف الشخصي</h3>
+                    <div class="me-3">
+                        <a href="">الرئيسية</a>
+                        <i>/</i>
+                        <span>الملف الشخصي</span>
+                    </div>
+
+                </div>
+                <div class="pb-5 pt-4 px-3 rounded-30 shadow mn-t-4">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <div class="position-relative d-inline mx-auto mt-3">
+                                <img src="assets/images/logo.png" height="90px" width="90px" class="shadow rounded-circle img-cover" alt="">
+                                <div class="file btn bg-main px-2 py-1 rounded-circle position-absolute end-0">
+                                    <label for="profile-img-user" class="btn btn-sm p-0 m-0 text-white">
+                                        <small class="fas fa-camera"></small>
+                                    </label>
+                                    <input type="file" class="file position-absolute top-0" id="profile-img-user" name="file"/>
+                                </div>
+                            </div>
+                            <div class="p-5 rounded-30 shadow-sm border mn-t-4">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3 text-end">
+                                                <label for="name" class="form-label ">الإسم بالكامل</label>
+                                                <input class="form-control rounded-pill" id="name" type="text" placeholder="حسن أبو محرم" aria-label="default input example">
+                                            </div>
+                                            <div class="mb-3 text-end">
+                                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                                <input class="form-control rounded-pill" id="email" type="text" placeholder="البريد الإلكتروني" aria-label="default input example">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3 text-end">
+                                                <label for="member" class="form-label">العضوية</label>
+                                                <input class="form-control rounded-pill" id="member" type="text" placeholder="عضو" aria-label="default input example">
+                                            </div>
+                                            <div class="mb-3 text-end">
+                                                <label for="password" class="form-label ">كلمة المرور</label>
+                                                <input class="form-control rounded-pill" id="password" type="text" placeholder="كلمة المرور" aria-label="default input example">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center my-3">
+                                        <button type="submit" class="shadow-sm btn btn-sm bg-main rounded-pill ms-3 px-3 py-2 text-white"><span class="h5 mb-0">تعديل</span><i class="fas fa-long-arrow-alt-left me-2 h6 mb-0"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+<script>
+
+    const contentButton = document.querySelector('.TopButton');
+    contentButton.addEventListener('click', function () {
+        window.scrollTo({
+            top: document.querySelector('#contact').offsetTop,
+            behavior: 'smooth'
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const topButton = document.querySelector('.TopButton');
+        topButton.style.display = 'none';
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 300) {
+                topButton.style.display = 'block';
+            } else {
+                topButton.style.display = 'none';
+            }
+        });
+
+        topButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const loader = document.querySelector('#loader');
+        loader.style.display = 'none';
+    });
+
+</script>
+<script>
+    $(document).ready(function () {
+        $('.active-sidebar').on('click', function () {
+            $('.sidebar').toggleClass('side-active');
+            $(this).toggleClass('open');
+        });
+        $('.active-sidebar').on('click', function () {
+            $('.main').on('click',function (){
+                $('.sidebar').removeClass('side-active');
+            })
+        });
+
+
+    });
+</script>
+</body>
+</html>

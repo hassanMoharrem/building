@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="theme-color" content="#000000"/>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--load all styles for font aswesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- My own style -->
+    <link href="assets/css/style.css" rel="stylesheet"/>
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<div class="wrapper position-relative container">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg bg-white pt-2 pb-2 border-bottom">
+            <a class="navbar-brand m-0 py-0" href="#">
+                <img src="assets/images/logo.png" width="120" alt="">
+            </a>
+            <button class="navbar-toggler  border rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-ellipsis-h"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav mt-2 mx-auto mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link px-3 py-1 font-19 mb-0 active-color" aria-current="page" href="#">الرئيسية</a>
+                        <span class="after-link"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-1 font-19 mb-0 main-color" href="#">من نحن</a>
+                        <span class="after-link"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-1 font-19 mb-0 main-color" href="#">المدونة</a>
+                        <span class="after-link"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 py-1 font-19 mb-0 main-color" href="#">تواصل معنا</a>
+                        <span class="after-link"></span>
+                    </li>
+                </ul>
+                <ul class="list-unstyled p-1 my-auto">
+                    <li class="d-inline-block px-2">
+                        <button type="button" class="btn rounded-pill button-main text-white font-size-sub " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            تسجيل الدخول
+                        </button>
+                    </li>
+                    <li class="d-inline-block px-2">
+                        <a href="" class="btn rounded-pill button-sub font-size-sub">انضم إلينا</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Vertically centered scrollable modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-30">
+                        <div class="rounded-30  p-0">
+                            <button type="button" class="btn p-0 m-3 position-absolute top-0 start-0" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times text-muted font-size-sub"></i></button>
+
+                            <div class="text-center p-4">
+                                <img src="assets/images/logo.png" class="bg-white mn-t-5 mb-3 img-contain rounded-circle p-2 shadow " alt="" width="100px" height="100px">
+                                <div class="title-form">
+                                    <h5 class="mb-2">سجل الدخول لحسابك</h5>
+                                    <div class="text-center or position-relative ">
+                                        <span class="text-muted position-relative h6 px-4 bg-white">أو</span>
+                                    </div>
+
+                                </div>
+                                <div class="text-center my-3">
+                                    <form action="">
+                                        <div class="mb-3 text-end">
+                                            <label for="email" class="form-label">رقم الجوال أو البريد الإلكتروني</label>
+                                            <input class="form-control rounded-pill" id="email" type="text" placeholder="رقم الجوال أو البريد الإلكتروني" aria-label="default input example">
+                                        </div>
+                                        <div class="mb-3 text-end">
+                                            <label for="password" class="form-label ">كلمة المرور</label>
+                                            <input class="form-control rounded-pill" id="password" type="text" placeholder="كلمة المرور" aria-label="default input example">
+                                        </div>
+                                        <div class="mb-4 text-end">
+                                            <h6 class="text-muted"><a href="" class="text-muted">نسيت كلمة المرور</a></h6>
+                                        </div>
+                                        <div class="text-start my-3">
+                                            <button type="submit" class="shadow-sm btn btn-sm btn-success rounded-pill ms-3 px-3 py-2"><span class="h5 mb-0">سجل</span><i class="fas fa-long-arrow-alt-left me-2 h6 mb-0"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="mt-4 mb-2 text-center">
+                                    <h6 class="text-muted">ليس لديك حساب على بناء ؟<a href="" class="text-primary me-2">تسجيل حساب
+                                        جديد</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="bg-section my-3">
+            <div class="content mt-2">
+                <div class="row w-100 mx-auto">
+                    <div class="col-md-6 my-auto">
+                        <div class="align-bottom px-4">
+                            <h1 class="sub-color font-big">أكادمية <span class="main-color">بناء</span></h1>
+                            <h1 class="font-26 mt-4 lh-base">تهتم الأكاديمية بمختلف محاور الدين الإسلامي من العقيدة و الفقه والثقافة الإسلامية</h1>
+                            <p class="text-muted h6 my-3">احصل على معرفة موضوعيّة عن الدين الإسلامي، ووثقها بشهادات معتبرة من أهم الحوزات والجامعات الإسلامية.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 my-auto text-start ">
+                        <img src="assets/images/main.png" class="img-slid p-4" width="380" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-4 px-5 rounded-30 shadow bg-rgba">
+            <div class="row justify-content-center">
+                <div class="col-md-2 my-2 my-md-auto">
+                    <h6 class="text-sub font-26 mb-1">هنا تبدأ رحلتك من العِلم إلى العَمل</h6>
+                </div>
+                <div class="col-md-10 my-2 my-md-auto">
+                    <div class="row w-100 mx-auto border-end">
+                        <div class="col-md-3 mb-3 my-md-auto">
+                            <div class="px-2 py-2">
+                                <img src="assets/images/certificate.png" width="40" alt="">
+                                <h5 class="text-sub font-23 mt-1">شهادة معتمدة</h5>
+                                <p class="text-muted font-size-sub"> لتعزز سيرتك الذاتية، أمام عدد كبير من المؤسسات الإسلامية.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 my-md-auto">
+                            <div class="px-2 py-2">
+                                <img src="assets/images/communication.png" width="40" alt="">
+                                <h5 class="text-sub font-23 mt-1"> منتدى تفاعلي</h5>
+                                <p class="text-muted font-size-sub"> لتشارك أفكارك مع المتعلمين والأساتذة ضمن مجتمع الأكاديمية. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 my-md-auto">
+                            <div class="px-2 py-2">
+                                <img src="assets/images/books.png" width="40" alt="">
+                                <h5 class="text-sub font-23 mt-1"> مكتبة مرجعية</h5>
+                                <p class="text-muted font-size-sub"> احصل على أهم المراجع التي ترد معك ضمن الدورات التعليمية. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3 my-md-auto">
+                            <div class="px-2 py-2">
+                                <img src="assets/images/groups.png" width="40" alt="">
+                                <h5 class="text-sub font-23 mt-1"> رابطة دائمة</h5>
+                                <p class="text-muted font-size-sub"> كُن جزءً من رابطة الأكاديمية، وشارك في نشر القيم الإسلامية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="owl-carousel owl-carousel-3 owl-theme">
+                        <div class="item">
+                            <div class="rounded-20 shadow">
+                                <img class="w-100 rounded-20 cover" height="350px"  src="assets/images/slide.jpg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="rounded-20 shadow">
+                                <img class="w-100 rounded-20 cover" height="350px"  src="assets/images/slide.jpg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="rounded-20 shadow">
+                                <img class="w-100 rounded-20 cover" height="350px"  src="assets/images/slide.jpg" alt="">
+
+                            </div>
+                        </div> <div class="item">
+                        <div class="rounded-20 shadow">
+                            <img class="w-100 rounded-20 cover" height="350px"  src="assets/images/slide.jpg" alt="">
+
+                        </div>
+                    </div>
+                        <div class="item">
+                            <div class="rounded-20 shadow">
+                                <img class="w-100 rounded-20 cover" height="350px"  src="assets/images/slide.jpg" alt="">
+
+                            </div>
+                        </div> <div class="item">
+                        <div class="rounded-20 shadow">
+                            <img class="w-100 rounded-20 cover" height="350px"  src="assets/images/slide.jpg" alt="">
+
+                        </div>
+                    </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+        <section class="bg-section pt-5 pb-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="text-center mb-4">
+                            <h2>أهم الدورات</h2>
+                            <p class="text-muted w-50 mx-auto">احصل على معرفة موضوعيّة عن الدين الإسلامي، ووثقها بشهادات معتبرة من أهم الحوزات والجامعات الإسلامية.</p>
+                        </div>
+                        <div class="owl-carousel owl-carousel-1 owl-theme">
+                            <div class="item">
+                                <div class="border shadow-sm rounded-20 bg-white">
+                                    <div class="position-relative">
+                                        <img src="assets/images/slide.jpg" class="w-100 cover rounded-top-30" height="180"
+                                             alt="">
+                                        <a href=""><i
+                                                class="fas fa-heart main-color heart d-flex justify-content-center align-items-center p-1 rounded-circle position-absolute top-0 end-0 m-3"></i></a>
+                                    </div>
+                                    <div class="bg-white p-2 rounded-bottom-20 border-top">
+                                        <small class="d-block text-muted mb-1 font-size-sub">الثقافة الإسلامية</small>
+                                      <h4 class="font-19 main-color"><a href="" class="font-19 main-color">الفكر الإسلامي</a></h4>
+                                        <div class="pt-2 text-start">
+                                            <h5 class="font-size-sub button-sub d-inline-block me-auto rounded-pill mb-0">مجاناً</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="border shadow-sm rounded-20 bg-white">
+                                    <div class="position-relative">
+                                        <img src="assets/images/slide.jpg" class="w-100 cover rounded-top-30" height="180"
+                                             alt="">
+                                        <a href=""><i
+                                                class="fas fa-heart sub-color heart d-flex justify-content-center align-items-center p-1 rounded-circle position-absolute top-0 end-0 m-3"></i></a>
+                                    </div>
+                                    <div class="bg-white p-2 rounded-bottom-20 border-top">
+                                        <small class="d-block text-muted mb-1 font-size-sub">الثقافة الإسلامية</small>
+                                      <h4 class="font-19 main-color"><a href="" class="font-19 main-color">الفكر الإسلامي</a></h4>
+                                        <div class="pt-2 text-start">
+                                            <h5 class="font-size-sub button-sub d-inline-block me-auto rounded-pill mb-0">مجاناً</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="border shadow-sm rounded-20 bg-white">
+                                    <div class="position-relative">
+                                        <img src="assets/images/slide.jpg" class="w-100 cover rounded-top-30" height="180"
+                                             alt="">
+                                        <a href=""><i
+                                                class="fas fa-heart main-color heart d-flex justify-content-center align-items-center p-1 rounded-circle position-absolute top-0 end-0 m-3"></i></a>
+                                    </div>
+                                    <div class="bg-white p-2 rounded-bottom-20 border-top">
+                                        <small class="d-block text-muted mb-1 font-size-sub">الثقافة الإسلامية</small>
+                                      <h4 class="font-19 main-color"><a href="" class="font-19 main-color">الفكر الإسلامي</a></h4>
+                                        <div class="pt-2 text-start">
+                                            <h5 class="font-size-sub button-sub d-inline-block me-auto rounded-pill mb-0">مجاناً</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="border shadow-sm rounded-20 bg-white">
+                                    <div class="position-relative">
+                                        <img src="assets/images/slide.jpg" class="w-100 cover rounded-top-30" height="180"
+                                             alt="">
+                                        <a href=""><i
+                                                class="fas fa-heart main-color heart d-flex justify-content-center align-items-center p-1 rounded-circle position-absolute top-0 end-0 m-3"></i></a>
+                                    </div>
+                                    <div class="bg-white p-2 rounded-bottom-20 border-top">
+                                        <small class="d-block text-muted mb-1 font-size-sub">الثقافة الإسلامية</small>
+                                      <h4 class="font-19 main-color"><a href="" class="font-19 main-color">الفكر الإسلامي</a></h4>
+                                        <div class="pt-2 text-start">
+                                            <h5 class="font-size-sub button-sub d-inline-block me-auto rounded-pill mb-0">مجاناً</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="border shadow-sm rounded-20 bg-white">
+                                    <div class="position-relative">
+                                        <img src="assets/images/slide.jpg" class="w-100 cover rounded-top-30" height="180"
+                                             alt="">
+                                        <a href=""><i
+                                                class="fas fa-heart main-color heart d-flex justify-content-center align-items-center p-1 rounded-circle position-absolute top-0 end-0 m-3"></i></a>
+                                    </div>
+                                    <div class="bg-white p-2 rounded-bottom-20 border-top">
+                                        <small class="d-block text-muted mb-1 font-size-sub">الثقافة الإسلامية</small>
+                                      <h4 class="font-19 main-color"><a href="" class="font-19 main-color">الفكر الإسلامي</a></h4>
+                                        <div class="pt-2 text-start">
+                                            <h5 class="font-size-sub button-sub d-inline-block me-auto rounded-pill mb-0">مجاناً</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center my-4">
+                            <a class="btn button-sub rounded-pill px-4 d-inline-block mx-auto"
+                               href="#">عرض الكل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="rounded-20 shadow">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="bg-white rounded-right-20 py-5 px-5">
+                                    <h2 class="mb-3">الأكادمية الإسلامية الأمثل</h2>
+                                    <p class="lh-base text-muted font-size-sub">سوق العقارات هو المنصة العقارية الأمثل لتسهيل عملية الشراء والبيع والإيجار للعقارات بمختلف أنواعها سواء للشركات أو للأفراد من خلال تقديم أفضل الحلول للعملاء من أجل الحصول على العقار المُناسب وتسهيل .التواصل المُباشر مع الوسطاء ومطوّري العقارات في ليبيا
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="w-100 rounded-left-20 h-100" src="assets/images/slide.jpg" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="py-5">
+            <div class="text-center my-3">
+                <h2>الأساتذة المتخصصين</h2>
+                <p class="text-muted">يمكن البحث عن الكثير من العقارات في المدينة التي تفضلها</p>
+            </div>
+            <div class="owl-carousel owl-carousel-2 owl-theme mt-4">
+                <div class="item">
+                    <div class="position-relative show-more-images">
+                        <img src="assets/images/slide.jpg" class="w-100 cover rounded-10" height="300px" alt="">
+                        <div class="overlay-3 text-right rounded-10">
+                            <h5 class="text-center font-19">الشيخ / حسن أبو محرم</h5>
+                            <h5 class="text-center font-size-sub">دكتور في الفقه الإسلامي</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="position-relative show-more-images">
+                        <img src="assets/images/slide.jpg" class="w-100 cover rounded-10" height="300px" alt="">
+                        <div class="overlay-3 text-right rounded-10">
+                            <h5 class="text-center font-19">الشيخ / حسن أبو محرم</h5>
+                            <h5 class="text-center font-size-sub">دكتور في الفقه الإسلامي</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="position-relative show-more-images">
+                        <img src="assets/images/slide.jpg" class="w-100 cover rounded-10" height="300px" alt="">
+                        <div class="overlay-3 text-right rounded-10">
+                            <h5 class="text-center font-19">الشيخ / حسن أبو محرم</h5>
+                            <h5 class="text-center font-size-sub">دكتور في العقيدة</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="position-relative show-more-images">
+                        <img src="assets/images/slide.jpg" class="w-100 cover rounded-10" height="300px" alt="">
+                        <div class="overlay-3 text-right rounded-10">
+                            <h5 class="text-center font-19">الشيخ / حسن أبو محرم</h5>
+                            <h5 class="text-center font-size-sub">دكتور في الفقه الإسلامي</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="position-relative show-more-images">
+                        <img src="assets/images/slide.jpg" class="w-100 cover rounded-10" height="300px" alt="">
+                        <div class="overlay-3 text-right rounded-10">
+                            <h5 class="text-center font-19">الشيخ / حسن أبو محرم</h5>
+                            <h5 class="text-center font-size-sub">دكتور في العقيدة</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="py-5 bg-light-edit position-relative">
+                <div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="text-center mb-4">
+                                <h2>مميزات بناء</h2>
+                                <p class="text-muted">أكادمية بناء تساعدك على فهم علوم الدين </p>
+                            </div>
+                            <div class="px-3">
+                                <div class="row">
+                                    <div class="col-md-6 ">
+                                        <div class="p-4 mt-4 bg-images" data-aos="fade-right" data-aos-duration="2000">
+                                            <h2 class="mb-4"><img src="assets/images/time.png" width="40px" class="ms-2"
+                                                                  alt=""><span class="align-middle sub-color">نبذة عن<span class="main-color"> بناء </span></span>
+                                            </h2>
+                                            <h5 class="pe-3 lh-base text-dark font-18">تهتم الأكاديمية بمختلف محاور الدين الإسلامي من العقيدة و الفقه والثقافة الإسلامية
+
+                                                احصل على معرفة موضوعيّة عن الدين الإسلامي، ووثقها بشهادات معتبرة من أهم الحوزات والجامعات الإسلامية.</h5>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 my-auto text-center">
+                                        <img src="assets/images/slide.jpg" class="w-75 mx-auto rounded-10" data-aos="fade-left"
+                                             data-aos-duration="2000" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+    <button type="button" class="btn TopButton position-fixed bottom-0 end-0 rounded-circle w-30px h-30px m-4 z-1200 bg-main"><i class=" d-flex justify-content-center align-items-center fas fa-angle-up text-white"></i></button>
+    <button type="button" class="btn openDiv position-fixed bottom-0 start-0 rounded-circle w-30px h-30px m-4 z-1200 bg-main"><i class=" d-flex justify-content-center align-items-center fas fa-gear text-white"></i></button>
+    <div class="position-fixed bottom-0 start-0 show-div">
+        <div class="position-relative p-5rem inside">
+            <button type="button" class="btn position-absolute first-btn rounded-circle w-25px h-25px  z-1200 bg-sub"><a href=""><i class=" d-flex justify-content-center align-items-center fa-brands fa-twitter text-white"></i></a></button>
+            <button type="button" class="btn position-absolute second-btn rounded-circle w-25px h-25px  z-1200 bg-sub"><a href=""><i class=" d-flex justify-content-center align-items-center fa-brands fa-facebook-f text-white"></i></a></button>
+            <button type="button" class="btn position-absolute theard-btn rounded-circle w-25px h-25px  z-1200 bg-sub"><a href=""><i class=" d-flex justify-content-center align-items-center fa-brands fa-youtube text-white"></i></a></button>
+            <button type="button" class="btn position-absolute last-btn rounded-circle w-25px h-25px  z-1200 bg-sub"><a href=""><i class=" d-flex justify-content-center align-items-center fa-brands fa-telegram-plane text-white"></i></a></button>
+        </div>
+
+    </div>
+    <button type="button" class="btn question position-fixed bottom-45 start-0 rounded-circle w-30px h-30px m-4 z-1200 bg-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="مساعدة عبر التلجرام" ><a href=""><i class=" d-flex justify-content-center align-items-center fa-solid fa-question text-white"></i></a></button>
+</div>
+<footer>
+    <div class="p-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <img src="assets/images/logo-v.png" width="50px" class="ms-1" alt="">
+                    <h6 class="text-muted font-13 lh-base my-3 lh-base">احصل على معرفة موضوعيّة عن الدين الإسلامي، ووثقها بشهادات معتبرة من أهم الحوزات والجامعات الإسلامية.</h6>
+                    <div>
+                        <a href="" class="mx-2"><i class="fab fa-github text-dark"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-youtube text-dark"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-instagram text-dark"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-twitter text-dark"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-facebook text-dark"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="mb-3 pe-3">بناء</h5>
+                    <ul class="list-unstyled ps-0 pe-3">
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">مكاتب هندسية</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">شركات مقاولات</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">ديكور وأثاث</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">مخططات</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">عقارات بالتقسيط</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">مطلوب</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="mb-3 pe-3">عنا</h5>
+                    <ul class="list-unstyled ps-0 pe-3">
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">من نحن</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">الأخبار</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">إتفاقية الإستخدام</a></li>
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="mb-3 pe-3">تواصل معنا</h5>
+                    <ul class="list-unstyled ps-0 pe-3">
+                        <li class="mb-3 text-muted h6"><a href="" class="text-muted">info@sooqaqarat.com</a></li>
+                        <li class="mb-3 text-muted h6 " dir="ltr"><a href="" class="text-muted">+ (218) 91-789-4686</a></li>
+                        <li class="mb-3 text-muted font-19"><a href="" class="text-muted">تركيا , بشاكشهير</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow-sm border-top py-2">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4 text-center text-md-start">
+                    <h6 class=" font-size-sub mb-0">جميع الحقوق محفوظة لموقع أكادمية بناء © 2023</h6>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <h6 class=" font-size-sub mb-0"><span class="ms-1">تطوير</span>Perfecto IT Solutions</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+ <!-- Optional JavaScript; choose one of the two! -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+<script>
+
+    const contentButton = document.querySelector('.TopButton');
+    contentButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: document.querySelector('#contact').offsetTop,
+        behavior: 'smooth'
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const topButton = document.querySelector('.TopButton');
+      topButton.style.display = 'none';
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          topButton.style.display = 'block';
+        } else {
+          topButton.style.display = 'none';
+        }
+      });
+
+      topButton.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+</script>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+    });
+    $('.owl-carousel-1').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 15,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-size-sub d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-size-sub d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+    $('.owl-carousel-2').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-size-sub d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-size-sub d-flex align-items-center justify-content-center mx-1 text-secondary px-2"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+    $('.owl-carousel-3').owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ['<i class="fas fa-angle-right arrow-30 rounded-circle border font-size-sub d-flex align-items-center justify-content-center mx-1 text-secondary px-2 end-0"></i>', '<i class="fas fa-angle-left arrow-30 rounded-circle border font-size-sub d-flex align-items-center justify-content-center mx-1 text-secondary px-2 start-0"></i>'],
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loader = document.querySelector('#loader');
+      loader.style.display = 'none';
+    });
+
+</script>
+</body>
+</html>
